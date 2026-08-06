@@ -42,7 +42,10 @@ per-page statistics that drive page-level pruning (including the `DataPageHeader
 statistics) — are numbered increments 20–21 below, on the settled surface alongside the S3
 `OutputFile` backend (increment 19). Sequenced as separate later milestones, each its own
 design: DataPage V2, the Avro write API, and a CLI write/convert command. Sorting-column
-metadata and custom record materializers are non-goals.
+metadata and custom record materializers are non-goals. Key-aligned layout control —
+forcing a page boundary at key-value changes (one page per key) for point-query workloads
+— is likewise a non-goal here; it would be a separate later increment if such demand
+surfaces.
 
 ## Write model
 
