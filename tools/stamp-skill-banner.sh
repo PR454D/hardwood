@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 #
+#  SPDX-License-Identifier: Apache-2.0
+#
+#  Copyright The original authors
+#
+#  Licensed under the Apache Software License version 2.0, available at http://www.apache.org/licenses/LICENSE-2.0
+#
+
+#
 # Stamps a "generated file" banner into each published SKILL.md so nobody edits
 # the mirror by hand. Shared by the publish path — tools/publish-skills.sh and
 # the hardwood-skills receiver workflow both call it, so the banner can't drift.
